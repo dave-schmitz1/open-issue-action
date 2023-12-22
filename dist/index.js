@@ -30790,18 +30790,18 @@ module.exports = parseParams
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-const core = __nccwpck_require__(2186)
-const github = __nccwpck_require__(5438)
+const core = __nccwpck_require__(2186);
+const github = __nccwpck_require__(5438);
 
 // most @actions toolkit packages have async methods
 async function run() {
   try {
-    const token = core.getInput('token')
-    const title = core.getInput('title')
-    const body = core.getInput('body')
-    const assignees = core.getInput('assignees')
+    const token = core.getInput('token');
+    const title = core.getInput('title');
+    const body = core.getInput('body');
+    const assignees = core.getInput('assignees');
 
-    const octokit = github.getOctokit(token)
+    const octokit = github.getOctokit(token);
 
     const response = await octokit.rest.issues.create({
       // owner: github.context.repo.owner,
@@ -30810,15 +30810,15 @@ async function run() {
       title,
       body,
       assignees: assignees ? assignees.split('\n') : undefined
-    })
+    });
 
-    core.setOutput('issue', response.data)
+    core.setOutput('issue', response.data);
   } catch (error) {
-    core.setFailed(error.message)
+    core.setFailed(error.message);
   }
 }
 
-run()
+run();
 
 })();
 
