@@ -30814,7 +30814,6 @@ async function run() {
 
     core.setOutput('issue', response.data)
   } catch (error) {
-    // Fail the workflow run if an error occurs
     core.setFailed(error.message)
   }
 }
