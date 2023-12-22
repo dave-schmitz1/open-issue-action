@@ -1,6 +1,6 @@
 # Open Issue Action
 
-![ci workflow](https://github.com/dave-schmitz/open-issue-action/actions/workflows/ci.yml/badge.svg?event=push&branch=main)
+![ci workflow](https://github.com/dave-schmitz1/open-issue-action/actions/workflows/ci.yml/badge.svg?event=push&branch=main)
 
 This action opens a new issue on GitHub with a title, body and a list of
 assignees.
