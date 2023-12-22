@@ -1,6 +1,6 @@
-name: 'Open a GitHub Issue'
-author: 'Dave Schmitz'
-description: 'Opens a github issue'
+name: "Open a GitHub Issue (Testing)"
+author: Dave Schmitz
+description: "Opens a github issue"
 inputs:
   token:
     description: "Github Token"
@@ -14,7 +14,7 @@ inputs:
     description: "Issue Assignees"
 outputs:
   issue: # id of output
-    description: 'The issue object as a json string'
+    description: "The issue object as a json string"
 runs:
-  using: node20
-  main: dist/index.js
+  using: "node16"
+  main: "dist/index.js"
